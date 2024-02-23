@@ -39,3 +39,22 @@ let enrollmentId = String(idNumber);
 console.log(enrollmentId);
 
 console.log(typeof enrollmentId);
+
+
+// Symbol() use to make uniqeness among two differnet variable, means if the values are same, that not means they are same variables
+
+
+const id = Symbol("256")
+
+const id2 = Symbol("256")
+
+console.log(id === id2);
+
+// typeof function returns fuction value
+
+const myFunction = function(){
+
+    console.log("Hello World");
+}
+
+console.log(typeof myFunction);
