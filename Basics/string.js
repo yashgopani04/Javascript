@@ -21,3 +21,29 @@ console.log(newString);
 const newString1 = fullName.slice(5 , 9)
 
 console.log(newString1);
+
+// trim use for remove extra whitespaces 
+
+const fullEmail = "    yashgopani04@gmail.com   "
+
+console.log(fullEmail);
+
+console.log(fullEmail.trim());
+
+// to replace something in strings replace()
+
+const friendName = "Harshit Virani"
+
+console.log(friendName);
+
+console.log(friendName.replace('Virani' , 'Isamliya'));
+
+// to chack the char or word in string use includes()
+
+console.log(friendName.includes('yash'));
+
+// to split from any char or word use split()
+
+const url = "http://www.google.com/youtube/yash-gopani04/channel"
+
+console.log(url.split('/'));
