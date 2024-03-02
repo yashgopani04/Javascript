@@ -1,83 +1,44 @@
-// we can add as many as instade objects and access it with "."
+// const myappUser = {
 
-const myappUser = {
-
-    user1 : {
+//     user1 : {
 
 
-    userfullName : {
+//         user1Id : 74586,
 
-            fName : "Yash",
-            lName : "Gopani"
+//         userfullName : {
 
-
-        }
-
-    }
+//             fName : "Yash",
+//             lName : "Gopani"
 
 
-}
+//         }
 
-// console.log(myappUser.user1.userfullName)
-
-// to merge to objects use assign() syntex
-
-const gamerA = {1 : "Sdf41", 2 : "Dfeg415"}
-const gamerB = {3 : "Sdf85", 4 : "Dfeg489"}
-const gamerC = {5 : "Sdf98", 6 : "Dfeg474"}
-
-// for better understanding and readability use {} as a target
-
-// const totalGammer = Object.assign({}, gamerA, gamerB, gamerC)
-
-// by using spread method{...name1, ...name2}
-
-const totalGammer = {...gamerA, ...gamerB, ...gamerC}
-
-console.log(totalGammer);
-
-// you can also make objects in arrays normally use in database
+//     }
 
 
-const myDatabase = [
+// }
 
-    {
-        userFname : "Yash",
-        userLname : "Gopani"
+// console.log(myappUser)
 
 
-    },
-    {
-        
+let myName = "Yash"
 
-    },
-    {
+console.log(myName);
 
 
-    }
+let allIds = {
 
-]
-
-// to access array object 
-
-// myDatabase[0].userLname
-
-const newUser = {
-
-    id : 8569,
-    Email : "yashgopani04@gmail.com"
-
+        fpersonId : "4523",
+        spersonId : "5826"
 
 }
 
-// to make every keys into a single array 
+let namesP = {
 
-console.log(Object.keys(newUser));
+    fpersonName : "Yash",
+    spersnName : "Gopani"
+}
 
-// to make every values into a single array
+let idStore = Object.assign({}, allIds, namesP)
 
-console.log(Object.values(newUser));
-
-// to describe every keys and values in indvidual array
-
-console.log(Object.entries(newUser));
+console.log(idStore);
