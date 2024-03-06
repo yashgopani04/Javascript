@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+}
+
+#canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: white; */
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid black; /* Initially no border */
+    cursor: pointer;
+}
+
+#grey {
+    background-color: grey;
+    border: 2px solid black
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+
