@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World</title>
+</head>
+<body>
+    
+    <h1 id="name">StacksCode</h1>
+
+    <button id="stop">Stop</button>
+    
+
+
+   
+</body>
+<script>
+
+    const myName = function(){
+
+        document.querySelector('#name').innerHTML = 'This is JavaScript'
+
+        
+    }
+
+
+    // use of setTimeout()
+    const stopMe = setTimeout(myName ,2000)
+    // console.log(myName);
+
+    
+    document.querySelector('#stop').addEventListener('click' ,function() {
+        
+        // use of clearTimeout
+        clearTimeout(stopMe)
+
+        console.log('stopped');
+    })
+
+</script>
+</html>
