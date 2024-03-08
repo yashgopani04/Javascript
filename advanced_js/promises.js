@@ -156,7 +156,7 @@ getallUsers()
 
 // same fatching api data using then and catch
 
-fetch('https://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users') // fetch runs first no metter where you write this
 
 .then(function(userData){
 
