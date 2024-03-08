@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const requestApi = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
+
+    const Xmr = new XMLHttpRequest();
+
+    Xmr.open('GET' , requestApi)
+
+    Xmr.onreadystatechange = function(){
+
+        console.log(Xmr.readyState);
+
+        if (Xmr.readyState === 4) {
+
+          const apiData = JSON.parse(this.responseText)
+
+        //   console.log(typeof apiData);
+
+        const childData  =  Object(apiData.source)
+
+        console.log(typeof childData);
+
+        console.log(childData);
+
+            
+        }
+    }
+
+    Xmr.send();
+
+</script>
+</html>
